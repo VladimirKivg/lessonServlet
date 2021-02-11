@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'war'
+    id 'org.gretty' version '3.0.3'
+}
+
+group 'edu.lits'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+
+        compile group: 'org.thymeleaf', name: 'thymeleaf-spring4', version: '3.0.12.RELEASE'
+        compile group: 'ognl', name: 'ognl', version: '3.1.26'
+}
+
